@@ -1,0 +1,9 @@
+https://docs.godotengine.org/en/stable/tutorials/shaders/your_first_shader/your_first_3d_shader.html
+https://docs.godotengine.org/en/stable/tutorials/networking/high_level_multiplayer.html
+https://randommomentania.com/2019/01/godot-voxel-terrain-tutorial-part-1/
+https://randommomentania.com/2018/11/godot-surface-tool-tutorial/
+https://github.com/godotengine/godot-demo-projects/pull/53/files#diff-ea94c8b0847911bffae5196a1b0a83457ace094d2c1e59acfddd7e3ea9b78d91
+https://docs.godotengine.org/en/stable/classes/class_surfacetool.html
+https://godotengine.org/asset-library/asset/676
+https://docs.godotengine.org/en/stable/tutorials/3d/procedural_geometry/surfacetool.html
+https://forum.godotengine.org/t/how-do-i-generate-a-mesh-from-code-in-godot/28930
