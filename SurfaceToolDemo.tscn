@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://dl80gljx5h1e7"]
+
+[ext_resource type="Script" path="res://Scripts/Square.cs" id="1_0n1d3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4hdb3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gx63o"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_x2q6p"]
+
+[sub_resource type="Environment" id="Environment_pfdd0"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_r1r6e"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="SquareMeshGenerator" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.644958, -0.661975, -0.381862, -0.748495, -0.446339, -0.490445, 0.154222, 0.602138, -0.783356, -1, 0, 1)
+material_override = SubResource("StandardMaterial3D_4hdb3")
+material_overlay = SubResource("StandardMaterial3D_gx63o")
+mesh = SubResource("ArrayMesh_x2q6p")
+script = ExtResource("1_0n1d3")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.6)
+environment = SubResource("Environment_pfdd0")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.041771, 0.999127, 0, -0.999127, 0.041771, 0, 1.12471, 0)
+shadow_enabled = true
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, -3)
+mesh = SubResource("SphereMesh_r1r6e")
