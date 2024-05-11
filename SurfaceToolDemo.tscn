@@ -47,7 +47,7 @@ mesh = SubResource("ArrayMesh_l0yjq")
 script = ExtResource("3_lpg58")
 
 [node name="CubeMeshGenerator" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.14206, -0.830333, 0.538857, -0.748495, -0.446339, -0.490445, 0.647745, -0.333658, -0.684908, 0.834772, 1.43086, -4.08923)
+transform = Transform3D(0.14206, -0.830333, 0.538857, -0.748495, -0.446339, -0.490445, 0.647745, -0.333658, -0.684908, -3.85665, 3.4201, -4.08923)
 material_override = SubResource("StandardMaterial3D_4hdb3")
 material_overlay = SubResource("StandardMaterial3D_gx63o")
 mesh = SubResource("ArrayMesh_j4y1d")

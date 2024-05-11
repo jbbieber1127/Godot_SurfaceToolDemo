@@ -1,7 +1,7 @@
 using Godot;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using SurfaceToolDemo.Scripts.Helpers;
 
 public partial class Cube : MeshInstance3D
 {
@@ -15,6 +15,7 @@ public partial class Cube : MeshInstance3D
     public override void _Ready()
     {
         // TODO colors
+        
         quadVertices = new List<Vector3>();
         quadIndices = new List<int>();
         dictQuadVerts = new Dictionary<Vector3, int>();
@@ -43,6 +44,7 @@ public partial class Cube : MeshInstance3D
 
         foreach (var vertex in quadVertices)
         {
+            st.SetColor(ColorHelper.GetRandomColor(true));
             st.AddVertex(vertex);
         }
 
@@ -87,4 +89,5 @@ public partial class Cube : MeshInstance3D
             return quadVertices.Count - 1;
         }
     }
+   
 }
